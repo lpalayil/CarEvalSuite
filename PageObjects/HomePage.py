@@ -7,7 +7,7 @@ class HomePage:
     """
     Class to hold the elements of Home Page
     """
-    #loctors
+    #locators
     registration_num_field = (By.CSS_SELECTOR, "#vrm-input")
     submit = (By.XPATH, "//button[@data-cy='valueButton']")
 
