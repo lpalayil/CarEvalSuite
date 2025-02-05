@@ -51,8 +51,8 @@ class TestCarValuation(BaseClass):
 
 
             #Get the output expected for the reg numb
-            reg_num = reg_data.strip().lower().replace(" ","")
-            expected_out = self.expected_data(reg_num)
+            reg_num = registration_number.strip().lower().replace(" ","")
+            expected_out = self.expected_data[reg_num]
 
             assert {'MAKE_MODEL':make_model,'YEAR':vehicle_details[0]} == expected_out,f"Valuation match failed for reg {reg_num}"
 
